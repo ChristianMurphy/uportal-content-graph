@@ -1,0 +1,42 @@
+description: Applications published to staff
+securityExpressions:
+  - "request.isUserInRole('Employee')"
+
+graph:
+  content:
+    apps:
+      app.edunav:
+        type: app
+        label: EduNav
+        groupLabel: Staff
+        url: https://foothill.edunav.com/cas
+        uiProperties:
+          action: openTab
+          iconClass: myapps-appicon-edunav
+          
+      app.payroll:
+        type: app
+        label: Payroll
+        longDescription: Payroll resources for Foothill-De Anza employees
+        groupLabel: Staff
+        keywords:
+          - district payroll
+          - liquid office
+          - faculty leave sub
+          - pay
+          - stub
+          - substitute
+          - time card
+        uiProperties:
+          action: openComponent
+          component: Payroll
+          iconClass: myapps-appicon-payroll
+
+      app.techsupport:
+        type: app
+        label: Technical Support
+        groupLabel: Staff
+        uiProperties:
+          action: openComponent
+          component: TechnicalSupport
+          iconClass: myapps-appicon-techsupport

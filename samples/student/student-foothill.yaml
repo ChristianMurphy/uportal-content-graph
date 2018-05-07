@@ -1,0 +1,65 @@
+description: Applications published to students of Foothill College
+securityExpressions:
+  - "request.isUserInRole('Student') and request.isUserInRole('Location Foothill')"
+
+graph:
+  content:
+    apps:
+      app.fhol-add-request:
+        type: app
+        label: Add Request for Foothill Online Courses
+        groupLabel: Students
+        # TODO: url: https://fhda.academicworks.com/users/shibboleth/init
+        uiProperties:
+          action: openTab
+          iconClass: myapps-appicon-fhol-add-request
+
+      app.alliedhealth:
+        type: app
+        label: Allied Health
+        groupLabel: Students
+        keywords:
+          - technology
+          - medical
+          - dental
+          - hygiene
+          - radiologic
+          - radiology
+          - veterinary
+          - respiratory
+          - diagnostic
+          - sonogoraphy
+          - pharmacy
+          - assisting
+          - paramedic
+        uiProperties:
+          action: openComponent
+          component: AlliedHealthProgram
+          iconClass: myapps-appicon-fh-alliedhealth
+
+      app.edready:
+        type: app
+        label: EdReady
+        groupLabel: Students
+        uiProperties:
+          action: openComponent
+          component: EdReady
+          iconClass: myapps-appicon-edready
+
+      app.edunav:
+        type: app
+        label: EduNav
+        groupLabel: Students
+        url: https://foothill.edunav.com/cas
+        uiProperties:
+          action: openTab
+          iconClass: myapps-appicon-edunav
+
+      app.go2orientation:
+        type: app
+        label: Go2Orientation
+        groupLabel: Students
+        url: https://ssocas.fhda.edu/cas/login?service=https%3A%2F%2Fwww.go2foothill.com%2Faccess%2Fcas
+        uiProperties:
+          action: openTab
+          iconClass: myapps-appicon-go2orientation

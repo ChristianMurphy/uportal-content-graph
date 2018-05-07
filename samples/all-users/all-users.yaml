@@ -1,0 +1,88 @@
+description: Applications published to all portal users
+securityExpressions:
+  - "request.isUserInRole('Everyone')"
+
+graph:
+  content:
+    apps:
+      app.academiccals:
+        type: app
+        label: Academic Dates & Deadlines
+        groupLabel: All Users
+        longDescription: Latest academic calendars on college websites
+        uiProperties:
+          action: openComponent
+          component: AcademicDatesDeadlines
+          iconClass: myapps-appicon-academiccal
+
+      app.campusevents:
+        type: app
+        label: Campus Events
+        groupLabel: All Users
+        uiProperties:
+          action: openComponent
+          component: CampusEvents
+          iconClass: myapps-appicon-campus-events
+
+      app.campusfoodsvc:
+        type: app
+        label: Campus Food Services
+        groupLabel: All Users
+        longDescription: Find out more about food and cafe services at each college
+        uiProperties:
+          action: openComponent
+          component: CampusFoodServices
+          iconClass: myapps-appicon-campusfood
+
+      app.courselookup:                           
+        type: app
+        label: Look Up Classes
+        groupLabel: All Users
+        longDescription: Get a department overview of available classes from Banner
+        # TODO: Deep-link into SSB
+        url: https://tobedetermined.fhda.edu
+        uiProperties:
+          action: openTab
+          iconClass: myapps-appicon-courselookup
+
+      app.emergnotify:
+        type: app
+        label: Emergency Notifications
+        groupLabel: All Users
+        longDescription: Configure phone numbers to receive campus emergency notifications
+        # TODO: Deep-link into SSB
+        url: https://tobedetermined.fhda.edu
+        uiProperties:
+          action: openTab
+          iconClass: myapps-appicon-emergnotify
+
+      app.fhda-foundation:
+        type: app
+        label: FHDA Foundation
+        groupLabel: All Users
+        longDescription: Visit the website for the Foothill-De Anza foundation
+        url: https://foundation.fhda.edu/
+        uiProperties:
+          action: openTab
+          iconClass: myapps-appicon-fhda-foundation
+
+      app.openclassfinder:
+        type: app
+        label: Open Class Finder
+        groupLabel: All Users
+        longDescription: Real-time report of classes which still have open seat availability
+        # TODO: Deep-link into SSB
+        url: https://tobedetermined.fhda.edu
+        uiProperties:
+          action: openTab
+          iconClass: myapps-appicon-openclassfinder
+
+      app.youtube.fhda:
+        type: app
+        label: YouTube
+        groupLabel: All Users
+        longDescription: Videos published by Central Services
+        url: https://www.youtube.com/user/FHDAChannel
+        uiProperties:
+          action: openTab
+          iconClass: myapps-appicon-youtube

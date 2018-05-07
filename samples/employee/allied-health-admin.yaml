@@ -1,0 +1,29 @@
+description: Applications published to approved reviewers in the Allied Health programs
+securityExpressions:
+  - "request.isUserInRole('Allied Health Program Directors')"
+
+graph:
+  content:
+    apps:
+      app.alliedhealth.reviewers:
+        type: app
+        label: Allied Health Admin
+        groupLabel: Staff
+        keywords:
+          - technology
+          - medical
+          - dental
+          - hygiene
+          - radiologic
+          - radiology
+          - veterinary
+          - respiratory
+          - diagnostic
+          - sonogoraphy
+          - pharmacy
+          - assisting
+          - paramedic
+        uiProperties:
+          action: openComponent
+          component: AlliedHealthProgramAdmin
+          iconClass: myapps-appicon-fh-alliedhealth

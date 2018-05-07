@@ -1,0 +1,16 @@
+description: Applications published to Banner INB users
+securityExpressions:
+  - "request.isUserInRole('Finance')"
+
+graph:
+  content:
+    apps:
+      app.financesv:
+        type: app
+        label: Finance Services
+        groupLabel: Staff
+        longDescription: Create requisitions and view budget balances
+        uiProperties:
+          action: openComponent
+          component: FinanceServices
+          iconClass: myapps-appicon-finserv

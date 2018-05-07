@@ -1,0 +1,16 @@
+description: Applications published to staff with IT project request privileges
+securityExpressions:
+  - "request.isUserInRole('IT Project Requester')"
+
+graph:
+  content:
+    apps:
+      app.it-project-request:
+        type: app
+        label: IT Project Request
+        groupLabel: Staff
+        longDescription: District workflow for submitting technology project requests
+        uiProperties:
+          action: openComponent
+          component: ITProjectRequest
+          iconClass: myapps-appicon-it-projreq

@@ -1,0 +1,15 @@
+description: Applications published to staff
+securityExpressions:
+  - "request.isUserInRole('Humanities Mellon Scholar Reviewers')"
+
+graph:
+  content:
+    apps:
+      app.mellon-scholar.reviewer:
+        type: app
+        label: Humanities Mellon Scholars
+        groupLabel: Staff
+        uiProperties:
+          action: openComponent
+          component: HumanitiesMellon
+          iconClass: myapps-appicon-mellonscholar

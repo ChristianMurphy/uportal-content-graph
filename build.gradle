@@ -1,0 +1,40 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath "io.spring.gradle:dependency-management-plugin:1.0.3.RELEASE"
+    }
+}
+
+// Configure build plugins
+apply plugin: "groovy"
+apply plugin: "io.spring.dependency-management"
+
+dependencyManagement {
+    imports {
+        mavenBom 'com.amazonaws:aws-java-sdk-bom:1.11.228'
+    }
+}
+
+// Configure the project metadata
+group = "edu.fhda.uportal.confgraph"
+version = "1.0"
+
+// Configure dependency repositories
+repositories {
+    mavenCentral()
+}
+
+// Configure external dependencies
+dependencies {
+    compile "org.codehaus.groovy:groovy:2.4.15"
+    compile "org.codehaus.groovy:groovy-json:2.4.15"
+	compile "org.codehaus.groovy:groovy-jsr223:2.4.15"
+    compile "org.yaml:snakeyaml:1.20"
+    compile "org.apache.commons:commons-jexl3:3.1"	
+	compile "org.slf4j:slf4j-api:1.7.25"
+    compile "com.google.guava:guava:25.0-jre"
+    compile "com.amazonaws:aws-java-sdk-s3"
+    testCompile "junit:junit:4.12"
+}

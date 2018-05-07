@@ -1,0 +1,15 @@
+description: Applications published to students of De Anza College
+securityExpressions:
+  - "request.isUserInRole('Student') and request.isUserInRole('Location De Anza')"
+
+graph:
+  content:
+    apps:
+      app.smartthinking:
+        type: app
+        label: Smart Thinking
+        groupLabel: Students
+        url: https://services.smarthinking.com/Login/supl.cfm?a=dFN0YW1wPTE1MTEzMDI2NDImdXNlcmlkPTEwNzE2NDI5JnBhc3N3b3JkPXBhc3N3ZGEyOTMmY2FwdHVyZURhdGE9JnRhcmdldFVSTD0mdHJhbnNmZXJBY2NvdW50PTAmcGFja2FnZWlkPTExNjU5JnBhcnRuZXJpZD1ETlpBNlBJRDNGODE5QyZ1c2VyZW1haWw9bWF0dC5yYXBjenluc2tpQGdtYWlsLmNvbSZtZXRhPTQ0MjEzMzQxJmluc3RpdHV0aW9uPTA=.YjM4OGMwMWYzZjQ1ZmQ2ODM4MDE4MjJhOThmNzk0MmZhNWYzNmRiOWRhNjE0NDlhZTI4YjA1YTgyN2RkYzRiYQ==
+        uiProperties:
+          action: openTab
+          iconClass: myapps-appicon-smart-thinking

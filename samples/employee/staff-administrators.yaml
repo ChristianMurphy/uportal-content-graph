@@ -1,0 +1,16 @@
+description: Applications published to college administrators and executives
+securityExpressions:
+  - "request.isUserInRole('Staff Administrator')"
+
+graph:
+  content:
+    apps:
+      app.approve.banner.wte:
+        type: app
+        label: Approve Staff Timecards
+        groupLabel: Staff
+        longDescription: Deep-link into Banner SSB to access staff time card approval
+        url: https://tobedetermined.fhda.edu
+        uiProperties:
+          action: openTab
+          iconClass: myapps-appicon-banner-wte

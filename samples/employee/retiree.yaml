@@ -1,0 +1,17 @@
+description: Applications published to retired staff members
+securityExpressions:
+  - "request.isUserInRole('Retiree')"
+  - "attributes['username'][0] == 10716429"
+
+graph:
+  content:
+    apps:
+      app.retirees:
+        type: app
+        label: Retirees
+        groupLabel: Staff
+        longDescription: Resources and links for retired staff members
+        uiProperties:
+          action: openComponent
+          component: Retirees
+          iconClass: myapps-appicon-retirees

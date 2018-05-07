@@ -1,0 +1,138 @@
+description: Applications published to students
+securityExpressions:
+  - "request.isUserInRole('Student')"
+
+graph:
+  content:
+    apps:
+      app.academicworks:
+        type: app
+        label: Academic Works
+        groupLabel: Students
+        url: https://fhda.academicworks.com/users/shibboleth/init
+        uiProperties:
+          action: openTab
+          iconClass: myapps-appicon-acadworks
+
+      app.campusbookstore:
+        type: app
+        label: Campus Bookstore
+        groupLabel: Students
+        uiProperties:
+          action: openComponent
+          component: CampusBookstore
+          iconClass: myapps-appicon-campus-bookstore
+
+      app.canvas:
+        type: app
+        label: Canvas
+        groupLabel: Students
+        uiProperties:
+          action: openComponent
+          component: Canvas
+          iconClass: myapps-appicon-canvas
+
+      app.civicimpact:
+        type: app
+        label: Civic Impact
+        groupLabel: Students
+        longDescription: Register to vote!
+        url: http://www.beapartofitall.org/
+        uiProperties:
+          action: openTab
+          iconClass: myapps-appicon-civicimpact
+
+      app.degreeworks:
+        type: app
+        label: Degreeworks
+        groupLabel: Students
+        keywords: [ degree, works, graduate ]
+        uiProperties:
+          action: openComponent
+          component: Degreeworks
+          iconClass: myapps-appicon-degreeworks
+
+      app.eprintit:
+        type: app
+        label: ePRINTit
+        groupLabel: Students
+        keywords: [ print, eprintit, eprint ]
+        uiProperties:
+          action: openComponent
+          component: EPrintIt
+          iconClass: myapps-appicon-eprintit
+
+      app.mellon-scholar.students:
+        type: app
+        label: Humanities Mellon Scholars
+        groupLabel: Students
+        uiProperties:
+          action: openComponent
+          component: HumanitiesMellon
+          iconClass: myapps-appicon-mellonscholar
+
+      app.notanymore:
+        type: app
+        label: Not Anymore
+        groupLabel: Students
+        longDescription: Interactive online program for reducing interpersonal violence on college campuses
+        url: https://ssocas.fhda.edu/cas/login?service=https%3A%2F%2Fstudentsuccess.org%2FSSO%2Ffhda
+        uiProperties:
+          action: openTab
+          iconClass: myapps-appicon-notanymore
+
+      app.parkingpermit:
+        type: app
+        label: Parking Permit
+        groupLabel: Students
+        uiProperties:
+          action: openComponent
+          component: Parking Permit
+          iconClass: myapps-appicon-parkpermit
+
+      app.priorityreg:
+        type: app
+        label: Priority Registration
+        groupLabel: Students
+        uiProperties:
+          action: openComponent
+          component: PriorityRegistration
+          iconClass: myapps-appicon-priorityreg
+
+      app.stuprofile:
+        type: app
+        label: Student Profile and Records
+        groupLabel: Students
+        uiProperties:
+          action: openComponent
+          component: StudentProfile
+          iconClass: myapps-appicon-stuprofile
+
+      app.touchnet:
+        type: app
+        label: Bill Payment
+        groupLabel: Students
+        url: https://tobedetermined.fhda.edu
+        uiProperties:
+          action: openTab
+          iconClass: myapps-appicon-billpay
+
+      app.vtasmartpass:
+        type: app
+        label: VTA SmartPass
+        groupLabel: Students
+        keywords:
+          - clipper card
+        uiProperties:
+          action: openComponent
+          component: VtaSmartPass
+          iconClass: myapps-appicon-vtasmartpass
+
+      app.studentemail:
+        type: app
+        label: Student Email Application
+        groupLabel: Students
+        uiProperties:
+          action: openComponent
+          component: StudentEmail
+          iconClass: myapps-appicon-studentemail 

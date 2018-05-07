@@ -1,0 +1,52 @@
+description: Applications published to staff with active job assignments
+securityExpressions:
+  - "request.isUserInRole('Active Employee')"
+
+graph:
+  content:
+    apps:
+      app.email.exchange:
+        type: app
+        label: Email & Calendar
+        groupLabel: Staff
+        longDescription: Web access to your staff e-mail, calendar, and contacts
+        url: https://email.fhda.edu
+        uiProperties:
+          action: openTab
+          iconClass: myapps-appicon-exchange
+
+      app.fit:
+        type: app
+        label: Faculty Inquiry Tool
+        groupLabel: Staff
+        uiProperties:
+          action: openComponent
+          component: FacultyInquiryTool
+          iconClass: myapps-appicon-fit
+
+      app.readwritegold:
+        type: app
+        label: Read & Write Gold
+        groupLabel: Staff
+        uiProperties:
+          action: openComponent
+          component: ReadWriteGold
+          iconClass: myapps-appicon-rwgold
+
+      app.sarsgrid:
+        type: app
+        label: SARS
+        groupLabel: Staff
+        uiProperties:
+          action: openComponent
+          component: SARS
+          iconClass: myapps-appicon-sars
+
+      app.student-dashboard:
+        type: app
+        label: Student Dashboard
+        groupLabel: Staff
+        uiProperties:
+          action: openComponent
+          component: StudentDashboard
+          iconClass: myapps-appicon-studashboard
