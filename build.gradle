@@ -8,6 +8,7 @@ buildscript {
 }
 
 // Configure build plugins
+apply plugin: "java"
 apply plugin: "groovy"
 apply plugin: "io.spring.dependency-management"
 
@@ -37,4 +38,9 @@ dependencies {
     compile "com.google.guava:guava:25.0-jre"
     compile "com.amazonaws:aws-java-sdk-s3"
     testCompile "junit:junit:4.12"
+}
+
+test {
+	// Enable stdout output from tests
+	testLogging.showStandardStreams = true
 }
