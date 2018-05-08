@@ -2,7 +2,7 @@
 
 Demonstrator project for a small data management library developed by Foothill-De Anza as part of its upcoming portal refresh project.
 
-The desire for the content graph arose out of appreciation for the DLM (distributed layout manager) and how it handles multiple disperate kinds of structured data that can be _assigned_ to a user. Content graph jumps in to address the lack of extensibility presently not available to uPortal implementors. One example might be that an implementor cannot easily define new institution-specific objects. With these custom objects defined, then the content graph can be make them available to multiple portlets (or in the future APIs) for a wide variety of uses.
+The desire for the content graph arose out of appreciation for the DLM (distributed layout manager) and how it handles multiple disperate kinds of structured data that can be _assigned_ to a user. Content graph jumps in to address the lack of extensibility presently available to uPortal implementors. One example might be that an implementor cannot easily define new institution-specific objects. With these custom objects defined, then the content graph can be make them available to multiple portlets (or in the future APIs) for a wide variety of uses.
 
 Another goal of the content graph is to achieve higher developer productivity by not being encumbered with the need to write and maintain large XML documents.
 
